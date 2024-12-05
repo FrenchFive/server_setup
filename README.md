@@ -60,6 +60,12 @@ nano ~/.zshrc
 ```
 
 Find : ZSH_THEME="robbyrussell" => ```"agnoster"```
+<br>Find : plugins=(git z autojump)
+
+Install Autojump plugin
+```bash
+sudo apt install autojump
+```
 
 Apply the changes
 ```bash
@@ -96,17 +102,25 @@ Navigate to the repository
 ```bash
 cd reponame
 ```
+
 Create a virtual Env for python
 ```bash
 python3 -m venv venv
 ```
+
 Activate the venv 
 ```bash
 source venv/bin/activate
 ```
+
 Intall all pip requirements
 ```bash
 pip3 install -r requirements.txt
+```
+
+Install Setup tools
+```bash
+pip install setuptools
 ```
 
 Making sure everything runs smoothly
@@ -154,4 +168,10 @@ ssh username@<your-linode-ip-address>
 Reboot the server
 ```bash
 sudo reboot
+```
+
+Activate and deactivate a Venv
+```bash
+source path/venv/bin/activate
+deactivate
 ```
