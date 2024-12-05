@@ -31,12 +31,40 @@ apt install ufw
 ufw allow OpenSSH
 ufw enable
 ```
+
 ## Switch to personal user 
 ```bash
 su - yourusername
 ```
 
 ## CUSTOMIZATION
+
+Install ZSH
+```bash
+sudo apt update && sudo apt install zsh -y
+```
+
+Make ZSH as Default Shell 
+```bash
+chsh -s $(which zsh)
+```
+
+Intall Oh My ZSH
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Change the Theme
+```bash
+nano ~/.zshrc
+```
+
+Find : ZSH_THEME="robbyrussell" => ```"agnoster"```
+
+Apply the changes
+```bash
+source ~/.zshrc
+```
 
 # INSTALLATION OF SOFTWARE 
 
@@ -110,7 +138,20 @@ sudo supervisorctl reread
 sudo supervisorctl update
 sudo supervisorctl start quackers
 ```
+
 Check for log 
 ```bash
 tail -f /var/log/quackers.out.log
+```
+
+# COMMANDS TO KNOW
+
+Connect as user
+```
+ssh username@<your-linode-ip-address>
+```
+
+Reboot the server
+```bash
+sudo reboot
 ```
