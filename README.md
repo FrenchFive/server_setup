@@ -24,12 +24,25 @@ Make it possible for the user to use SUDO commads
 usermod -aG sudo yourusername
 ```
 
-## Setup a Firewall 
+## Security
 
+Set a Firewall
 ```bash
 apt install ufw
 ufw allow OpenSSH
 ufw enable
+```
+
+Changing SSH
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+Change Port : **Port 22**
+<br>Disable Root Login : **PermitRootLogin no**
+
+Restart SSH to apply changes
+```bash
+sudo systemctl restart ssh
 ```
 
 ## Switch to personal user 
