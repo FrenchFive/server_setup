@@ -13,7 +13,8 @@ A complete guide to set up and customize your Linux server, secure it, and deplo
 5. [🐍 Software Installation](#5-software-installation)
 6. [📦 Running a Repository](#6-running-a-repository)
 7. [⚙️ Supervisor Configuration](#7-supervisor-configuration)
-8. [📋 Handy Commands](#8-handy-commands)
+8. [Monitoring server via command lines](#8-monitoring)
+9. [📋 Handy Commands](#8-handy-commands)
 
 ---
 
@@ -160,7 +161,26 @@ apt install python3 python3-pip git supervisor -y
 
 ---
 
-## 📋 8. Handy Commands
+## 8. Monitoring server via command lines
+
+1. Install SnapD:
+   ```bash
+   sudo apt install snapd -y
+   ```
+2. Install GOTOP:
+   ```bash
+   sudo snap install gotop
+   ```
+3. Run Gotop:
+   ```bash
+   gotop
+   ```
+4. Quit Gotop:
+   <br>Press ```Q```
+
+---
+
+## 📋 9. Handy Commands
 
 | Action                     | Command                                         |
 |----------------------------|-------------------------------------------------|
