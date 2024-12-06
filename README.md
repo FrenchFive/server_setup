@@ -180,7 +180,7 @@ apt install python3 python3-pip git supervisor -y
 
 ---
 
-## 📋 9. Handy Commands
+## 📋 9. Handy Stuff to Know
 
 | Action                     | Command                                         |
 |----------------------------|-------------------------------------------------|
@@ -188,6 +188,15 @@ apt install python3 python3-pip git supervisor -y
 | Reboot the server          | `sudo reboot`                                   |
 | Activate virtual environment | `source path/venv/bin/activate`               |
 | Deactivate virtual environment | `deactivate`                                |
+
+Rerouting a domain to your server :
+<br>Add an Advanced DNS :
+<br>
+|Hostname | Type | Value | TTL|
+|---|---|---|---|
+|@ | A | 184.246.0.204 | 3600|
+
+This means that domain.com will resolve to 184.246.0.204
 
 ---
 
