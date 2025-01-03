@@ -186,12 +186,13 @@ apt install python3 python3-pip git supervisor -y
 |----------------------------|-------------------------------------------------|
 | Connect as user            | `ssh username@<your-linode-ip-address>`         |
 | Reboot the server          | `sudo reboot`                                   |
+| Reload ZSH or Bash Config  | `source ~/.zshrc`                               |
 | Activate virtual environment | `source path/venv/bin/activate`               |
 | Deactivate virtual environment | `deactivate`                                |
 
+
 Rerouting a domain to your server :
 <br>Add an Advanced DNS :
-<br>
 |Hostname | Type | Value | TTL|
 |---|---|---|---|
 |@ | A | 184.246.0.204 | 3600|
